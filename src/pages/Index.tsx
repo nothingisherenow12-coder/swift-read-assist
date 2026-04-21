@@ -248,6 +248,24 @@ const Index = () => {
             <FeedbackScreen />
           </PhoneFrame>
         </Group>
+
+        <Group n="12" title="Final loops" subtitle="Closing the last taps">
+          <PhoneFrame label="Edit profile" description="Profile → Edit profile → name, photo, bio.">
+            <EditProfileScreen />
+          </PhoneFrame>
+          <PhoneFrame label="Subscription" description="Profile → Subscription → manage Pro plan.">
+            <SubscriptionScreen />
+          </PhoneFrame>
+          <PhoneFrame label="Legal" description="About → Legal → terms, privacy, licenses.">
+            <LegalScreen />
+          </PhoneFrame>
+          <PhoneFrame label="Help article" description="Help → tap a topic → full FAQ article.">
+            <FaqDetailScreen />
+          </PhoneFrame>
+          <PhoneFrame label="Save to collection" description="Item actions → Save → pick a collection.">
+            <SaveToCollectionSheetScreen />
+          </PhoneFrame>
+        </Group>
       </section>
 
       <footer className="border-t border-border/60 py-8 text-center text-[12px] text-muted-foreground">
