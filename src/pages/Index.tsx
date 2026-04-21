@@ -34,6 +34,11 @@ import { FilterSheetScreen } from "@/components/screens/FilterSheetScreen";
 import { ShareSheetScreen } from "@/components/screens/ShareSheetScreen";
 import { HelpScreen } from "@/components/screens/HelpScreen";
 import { FeedbackScreen } from "@/components/screens/FeedbackScreen";
+import { EditProfileScreen } from "@/components/screens/EditProfileScreen";
+import { SubscriptionScreen } from "@/components/screens/SubscriptionScreen";
+import { LegalScreen } from "@/components/screens/LegalScreen";
+import { FaqDetailScreen } from "@/components/screens/FaqDetailScreen";
+import { SaveToCollectionSheetScreen } from "@/components/screens/SaveToCollectionSheetScreen";
 import { Sparkles, Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 
