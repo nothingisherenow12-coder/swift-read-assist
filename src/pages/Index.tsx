@@ -20,6 +20,13 @@ import { ThemeScreen } from "@/components/screens/ThemeScreen";
 import { ClearHistoryDialogScreen } from "@/components/screens/ClearHistoryDialogScreen";
 import { NewCollectionSheetScreen } from "@/components/screens/NewCollectionSheetScreen";
 import { ItemActionsSheetScreen } from "@/components/screens/ItemActionsSheetScreen";
+import { DeleteCollectionDialogScreen } from "@/components/screens/DeleteCollectionDialogScreen";
+import { DeleteArticleDialogScreen } from "@/components/screens/DeleteArticleDialogScreen";
+import { SearchScreen } from "@/components/screens/SearchScreen";
+import { SearchResultsScreen } from "@/components/screens/SearchResultsScreen";
+import { ToastScreen } from "@/components/screens/ToastScreen";
+import { PaywallScreen } from "@/components/screens/PaywallScreen";
+import { AboutScreen } from "@/components/screens/AboutScreen";
 import { Sparkles, Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 
