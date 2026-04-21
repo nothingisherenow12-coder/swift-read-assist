@@ -27,6 +27,13 @@ import { SearchResultsScreen } from "@/components/screens/SearchResultsScreen";
 import { ToastScreen } from "@/components/screens/ToastScreen";
 import { PaywallScreen } from "@/components/screens/PaywallScreen";
 import { AboutScreen } from "@/components/screens/AboutScreen";
+import { ProfileScreen } from "@/components/screens/ProfileScreen";
+import { PasteInputScreen } from "@/components/screens/PasteInputScreen";
+import { HistoryMenuSheetScreen } from "@/components/screens/HistoryMenuSheetScreen";
+import { FilterSheetScreen } from "@/components/screens/FilterSheetScreen";
+import { ShareSheetScreen } from "@/components/screens/ShareSheetScreen";
+import { HelpScreen } from "@/components/screens/HelpScreen";
+import { FeedbackScreen } from "@/components/screens/FeedbackScreen";
 import { Sparkles, Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 
