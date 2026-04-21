@@ -37,6 +37,8 @@ import { EditProfileScreen } from "@/components/screens/EditProfileScreen";
 import { LegalScreen } from "@/components/screens/LegalScreen";
 import { FaqDetailScreen } from "@/components/screens/FaqDetailScreen";
 import { SaveToCollectionSheetScreen } from "@/components/screens/SaveToCollectionSheetScreen";
+import { LiveChatScreen } from "@/components/screens/LiveChatScreen";
+import { PhotoPickerSheetScreen } from "@/components/screens/PhotoPickerSheetScreen";
 import { Sparkles, Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 

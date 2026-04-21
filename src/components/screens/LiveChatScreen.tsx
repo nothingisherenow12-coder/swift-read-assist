@@ -20,11 +20,11 @@ export const LiveChatScreen = () => {
             <div className="w-8 h-8 rounded-full bg-gradient-accent flex items-center justify-center">
               <span className="font-display text-[11px] font-bold text-white">M</span>
             </div>
-            <span className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-emerald-500 border-2 border-background" />
+            <span className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-accent border-2 border-background" />
           </div>
           <div>
             <p className="font-display text-[12.5px] font-bold text-foreground leading-tight">Maya · Support</p>
-            <p className="text-[9.5px] text-emerald-600 font-semibold">Online</p>
+            <p className="text-[9.5px] text-accent font-semibold">Online</p>
           </div>
         </div>
         <button className="w-9 h-9 rounded-full bg-secondary flex items-center justify-center text-foreground/70">
