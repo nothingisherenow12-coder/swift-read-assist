@@ -25,7 +25,6 @@ import { DeleteArticleDialogScreen } from "@/components/screens/DeleteArticleDia
 import { SearchScreen } from "@/components/screens/SearchScreen";
 import { SearchResultsScreen } from "@/components/screens/SearchResultsScreen";
 import { ToastScreen } from "@/components/screens/ToastScreen";
-import { PaywallScreen } from "@/components/screens/PaywallScreen";
 import { AboutScreen } from "@/components/screens/AboutScreen";
 import { ProfileScreen } from "@/components/screens/ProfileScreen";
 import { PasteInputScreen } from "@/components/screens/PasteInputScreen";
@@ -35,7 +34,6 @@ import { ShareSheetScreen } from "@/components/screens/ShareSheetScreen";
 import { HelpScreen } from "@/components/screens/HelpScreen";
 import { FeedbackScreen } from "@/components/screens/FeedbackScreen";
 import { EditProfileScreen } from "@/components/screens/EditProfileScreen";
-import { SubscriptionScreen } from "@/components/screens/SubscriptionScreen";
 import { LegalScreen } from "@/components/screens/LegalScreen";
 import { FaqDetailScreen } from "@/components/screens/FaqDetailScreen";
 import { SaveToCollectionSheetScreen } from "@/components/screens/SaveToCollectionSheetScreen";
@@ -60,7 +58,7 @@ const Index = () => {
             </div>
             <div>
               <p className="font-display text-[15px] font-bold text-foreground leading-none">Lumen</p>
-              <p className="text-[10px] text-muted-foreground mt-0.5">UI / UX Preview · 41 screens</p>
+              <p className="text-[10px] text-muted-foreground mt-0.5">UI / UX Preview · 39 screens</p>
             </div>
           </div>
           <button
@@ -216,10 +214,7 @@ const Index = () => {
           </PhoneFrame>
         </Group>
 
-        <Group n="10" title="Monetization & meta" subtitle="Pro upgrade + about">
-          <PhoneFrame label="Paywall · Pro" description="Yearly vs monthly, free trial CTA, feature list.">
-            <PaywallScreen />
-          </PhoneFrame>
+        <Group n="10" title="Meta" subtitle="App info">
           <PhoneFrame label="About" description="Version, rate, legal, support — all in one.">
             <AboutScreen />
           </PhoneFrame>
@@ -253,9 +248,6 @@ const Index = () => {
           <PhoneFrame label="Edit profile" description="Profile → Edit profile → name, photo, bio.">
             <EditProfileScreen />
           </PhoneFrame>
-          <PhoneFrame label="Subscription" description="Profile → Subscription → manage Pro plan.">
-            <SubscriptionScreen />
-          </PhoneFrame>
           <PhoneFrame label="Legal" description="About → Legal → terms, privacy, licenses.">
             <LegalScreen />
           </PhoneFrame>
@@ -269,7 +261,7 @@ const Index = () => {
       </section>
 
       <footer className="border-t border-border/60 py-8 text-center text-[12px] text-muted-foreground">
-        Lumen — visual system · 41 screens · Material 3 principles
+        Lumen — visual system · 39 screens · Material 3 principles
       </footer>
     </div>
   );

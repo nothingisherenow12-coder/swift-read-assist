@@ -47,7 +47,7 @@ export const ProfileScreen = () => {
         </div>
 
         <div className="rounded-2xl bg-card border border-border/60 overflow-hidden divide-y divide-border/50">
-          {["Edit profile", "Notifications", "Privacy", "Subscription"].map((l) => (
+          {["Edit profile", "Notifications", "Privacy"].map((l) => (
             <div key={l} className="flex items-center gap-3 px-3.5 h-11">
               <p className="flex-1 text-[12.5px] font-medium text-foreground">{l}</p>
               <ChevronRight className="w-3.5 h-3.5 text-muted-foreground" />
