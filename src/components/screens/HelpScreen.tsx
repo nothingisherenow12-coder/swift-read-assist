@@ -11,7 +11,7 @@ const faqs = [
   "How does Lumen detect copied text?",
   "Why does it need accessibility access?",
   "Can I use Lumen offline?",
-  "How do I cancel my subscription?",
+  "How do I export my reading history?",
 ];
 
 export const HelpScreen = () => {
