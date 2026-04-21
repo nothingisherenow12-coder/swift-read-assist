@@ -34,6 +34,11 @@ import { FilterSheetScreen } from "@/components/screens/FilterSheetScreen";
 import { ShareSheetScreen } from "@/components/screens/ShareSheetScreen";
 import { HelpScreen } from "@/components/screens/HelpScreen";
 import { FeedbackScreen } from "@/components/screens/FeedbackScreen";
+import { EditProfileScreen } from "@/components/screens/EditProfileScreen";
+import { SubscriptionScreen } from "@/components/screens/SubscriptionScreen";
+import { LegalScreen } from "@/components/screens/LegalScreen";
+import { FaqDetailScreen } from "@/components/screens/FaqDetailScreen";
+import { SaveToCollectionSheetScreen } from "@/components/screens/SaveToCollectionSheetScreen";
 import { Sparkles, Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -55,7 +60,7 @@ const Index = () => {
             </div>
             <div>
               <p className="font-display text-[15px] font-bold text-foreground leading-none">Lumen</p>
-              <p className="text-[10px] text-muted-foreground mt-0.5">UI / UX Preview · 36 screens</p>
+              <p className="text-[10px] text-muted-foreground mt-0.5">UI / UX Preview · 41 screens</p>
             </div>
           </div>
           <button
@@ -243,10 +248,28 @@ const Index = () => {
             <FeedbackScreen />
           </PhoneFrame>
         </Group>
+
+        <Group n="12" title="Final loops" subtitle="Closing the last taps">
+          <PhoneFrame label="Edit profile" description="Profile → Edit profile → name, photo, bio.">
+            <EditProfileScreen />
+          </PhoneFrame>
+          <PhoneFrame label="Subscription" description="Profile → Subscription → manage Pro plan.">
+            <SubscriptionScreen />
+          </PhoneFrame>
+          <PhoneFrame label="Legal" description="About → Legal → terms, privacy, licenses.">
+            <LegalScreen />
+          </PhoneFrame>
+          <PhoneFrame label="Help article" description="Help → tap a topic → full FAQ article.">
+            <FaqDetailScreen />
+          </PhoneFrame>
+          <PhoneFrame label="Save to collection" description="Item actions → Save → pick a collection.">
+            <SaveToCollectionSheetScreen />
+          </PhoneFrame>
+        </Group>
       </section>
 
       <footer className="border-t border-border/60 py-8 text-center text-[12px] text-muted-foreground">
-        Lumen — visual system · 36 screens · Material 3 principles
+        Lumen — visual system · 41 screens · Material 3 principles
       </footer>
     </div>
   );
