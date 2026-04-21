@@ -48,7 +48,7 @@ const Index = () => {
             </div>
             <div>
               <p className="font-display text-[15px] font-bold text-foreground leading-none">Lumen</p>
-              <p className="text-[10px] text-muted-foreground mt-0.5">UI / UX Preview · 22 screens</p>
+              <p className="text-[10px] text-muted-foreground mt-0.5">UI / UX Preview · 29 screens</p>
             </div>
           </div>
           <button
@@ -182,10 +182,40 @@ const Index = () => {
             <ClearHistoryDialogScreen />
           </PhoneFrame>
         </Group>
+
+        <Group n="08" title="Search & discovery" subtitle="Find anything, fast">
+          <PhoneFrame label="Search" description="Tap search bar → recent + trending queries.">
+            <SearchScreen />
+          </PhoneFrame>
+          <PhoneFrame label="Search results" description="Highlighted matches across reads.">
+            <SearchResultsScreen />
+          </PhoneFrame>
+        </Group>
+
+        <Group n="09" title="Confirmations & feedback" subtitle="Destructive + success states">
+          <PhoneFrame label="Delete collection" description="Long-press → destructive confirm with item count.">
+            <DeleteCollectionDialogScreen />
+          </PhoneFrame>
+          <PhoneFrame label="Delete article" description="Item actions → Delete → soft confirm.">
+            <DeleteArticleDialogScreen />
+          </PhoneFrame>
+          <PhoneFrame label="Saved snackbar" description="After save → undo-able toast pinned above nav.">
+            <ToastScreen />
+          </PhoneFrame>
+        </Group>
+
+        <Group n="10" title="Monetization & meta" subtitle="Pro upgrade + about">
+          <PhoneFrame label="Paywall · Pro" description="Yearly vs monthly, free trial CTA, feature list.">
+            <PaywallScreen />
+          </PhoneFrame>
+          <PhoneFrame label="About" description="Version, rate, legal, support — all in one.">
+            <AboutScreen />
+          </PhoneFrame>
+        </Group>
       </section>
 
       <footer className="border-t border-border/60 py-8 text-center text-[12px] text-muted-foreground">
-        Lumen — visual system · 15 screens · Material 3 principles
+        Lumen — visual system · 29 screens · Material 3 principles
       </footer>
     </div>
   );
