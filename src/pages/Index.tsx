@@ -27,6 +27,13 @@ import { SearchResultsScreen } from "@/components/screens/SearchResultsScreen";
 import { ToastScreen } from "@/components/screens/ToastScreen";
 import { PaywallScreen } from "@/components/screens/PaywallScreen";
 import { AboutScreen } from "@/components/screens/AboutScreen";
+import { ProfileScreen } from "@/components/screens/ProfileScreen";
+import { PasteInputScreen } from "@/components/screens/PasteInputScreen";
+import { HistoryMenuSheetScreen } from "@/components/screens/HistoryMenuSheetScreen";
+import { FilterSheetScreen } from "@/components/screens/FilterSheetScreen";
+import { ShareSheetScreen } from "@/components/screens/ShareSheetScreen";
+import { HelpScreen } from "@/components/screens/HelpScreen";
+import { FeedbackScreen } from "@/components/screens/FeedbackScreen";
 import { Sparkles, Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -48,7 +55,7 @@ const Index = () => {
             </div>
             <div>
               <p className="font-display text-[15px] font-bold text-foreground leading-none">Lumen</p>
-              <p className="text-[10px] text-muted-foreground mt-0.5">UI / UX Preview · 29 screens</p>
+              <p className="text-[10px] text-muted-foreground mt-0.5">UI / UX Preview · 36 screens</p>
             </div>
           </div>
           <button
@@ -212,10 +219,34 @@ const Index = () => {
             <AboutScreen />
           </PhoneFrame>
         </Group>
+
+        <Group n="11" title="Connectors" subtitle="Closing every loose tap">
+          <PhoneFrame label="Profile" description="Tap avatar on Home → stats, account, sign out.">
+            <ProfileScreen />
+          </PhoneFrame>
+          <PhoneFrame label="Paste text" description="Tap 'Try with my own text' → paste & analyze.">
+            <PasteInputScreen />
+          </PhoneFrame>
+          <PhoneFrame label="History menu" description="Tap ⋯ on History → sort, filter, export, clear.">
+            <HistoryMenuSheetScreen />
+          </PhoneFrame>
+          <PhoneFrame label="Filter" description="Tap a filter chip → date, mode, collection picker.">
+            <FilterSheetScreen />
+          </PhoneFrame>
+          <PhoneFrame label="Share" description="Item actions → Share → app picker + export options.">
+            <ShareSheetScreen />
+          </PhoneFrame>
+          <PhoneFrame label="Help" description="Settings → Help → search, topics, FAQs, contact.">
+            <HelpScreen />
+          </PhoneFrame>
+          <PhoneFrame label="Feedback" description="Settings → Feedback → mood + type + message.">
+            <FeedbackScreen />
+          </PhoneFrame>
+        </Group>
       </section>
 
       <footer className="border-t border-border/60 py-8 text-center text-[12px] text-muted-foreground">
-        Lumen — visual system · 29 screens · Material 3 principles
+        Lumen — visual system · 36 screens · Material 3 principles
       </footer>
     </div>
   );
