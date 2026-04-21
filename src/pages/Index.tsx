@@ -13,6 +13,13 @@ import { ErrorScreen } from "@/components/screens/ErrorScreen";
 import { NotificationScreen } from "@/components/screens/NotificationScreen";
 import { QuickActionsScreen } from "@/components/screens/QuickActionsScreen";
 import { LanguageScreen } from "@/components/screens/LanguageScreen";
+import { CollectionDetailScreen } from "@/components/screens/CollectionDetailScreen";
+import { ArticleDetailScreen } from "@/components/screens/ArticleDetailScreen";
+import { DefaultModeScreen } from "@/components/screens/DefaultModeScreen";
+import { ThemeScreen } from "@/components/screens/ThemeScreen";
+import { ClearHistoryDialogScreen } from "@/components/screens/ClearHistoryDialogScreen";
+import { NewCollectionSheetScreen } from "@/components/screens/NewCollectionSheetScreen";
+import { ItemActionsSheetScreen } from "@/components/screens/ItemActionsSheetScreen";
 import { Sparkles, Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -34,7 +41,7 @@ const Index = () => {
             </div>
             <div>
               <p className="font-display text-[15px] font-bold text-foreground leading-none">Lumen</p>
-              <p className="text-[10px] text-muted-foreground mt-0.5">UI / UX Preview · 15 screens</p>
+              <p className="text-[10px] text-muted-foreground mt-0.5">UI / UX Preview · 22 screens</p>
             </div>
           </div>
           <button
@@ -142,6 +149,30 @@ const Index = () => {
           </PhoneFrame>
           <PhoneFrame label="Language picker" description="Search + selected + grouped list.">
             <LanguageScreen />
+          </PhoneFrame>
+        </Group>
+
+        <Group n="07" title="Destinations" subtitle="What every tap leads to">
+          <PhoneFrame label="Collection detail" description="Tap a Library card → list of items inside.">
+            <CollectionDetailScreen />
+          </PhoneFrame>
+          <PhoneFrame label="Article detail" description="Tap a recent save → full text + re-open AI.">
+            <ArticleDetailScreen />
+          </PhoneFrame>
+          <PhoneFrame label="New collection" description="Tap + in Library → name + color picker sheet.">
+            <NewCollectionSheetScreen />
+          </PhoneFrame>
+          <PhoneFrame label="Item actions" description="Long-press a save → Open / Move / Share / Delete.">
+            <ItemActionsSheetScreen />
+          </PhoneFrame>
+          <PhoneFrame label="Default mode" description="Settings → Default mode → radio picker.">
+            <DefaultModeScreen />
+          </PhoneFrame>
+          <PhoneFrame label="Theme" description="Settings → Theme → System / Light / Dark.">
+            <ThemeScreen />
+          </PhoneFrame>
+          <PhoneFrame label="Clear history" description="Settings → Clear history → destructive confirm.">
+            <ClearHistoryDialogScreen />
           </PhoneFrame>
         </Group>
       </section>
