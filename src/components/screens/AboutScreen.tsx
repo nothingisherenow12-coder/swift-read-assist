@@ -1,5 +1,5 @@
 import { ArrowLeft, Star, FileText, Shield, Mail, Github, Heart } from "lucide-react";
-import { LumenLogo } from "@/components/LumenLogo";
+import { ReadlensLogo } from "@/components/ReadlensLogo";
 
 export const AboutScreen = () => {
   return (
@@ -15,7 +15,7 @@ export const AboutScreen = () => {
       <div className="flex-1 overflow-hidden px-5">
         <div className="flex flex-col items-center pt-2 pb-5">
           <div className="w-16 h-16 rounded-3xl bg-gradient-accent flex items-center justify-center shadow-soft mb-3">
-            <LumenLogo className="w-9 h-9" />
+            <ReadlensLogo className="w-9 h-9" />
           </div>
           <p className="font-display text-[18px] font-bold text-foreground">Readlens AI</p>
           <p className="text-[11px] text-muted-foreground mt-0.5">Version 1.4.2 (build 218)</p>

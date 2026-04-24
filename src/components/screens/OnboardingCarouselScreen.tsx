@@ -1,5 +1,5 @@
 import { ChevronRight, ArrowRight } from "lucide-react";
-import { LumenLogo } from "@/components/LumenLogo";
+import { ReadlensLogo } from "@/components/ReadlensLogo";
 
 const slides = [
   {
@@ -32,7 +32,7 @@ export const OnboardingCarouselScreen = () => {
         <div className="relative w-44 h-44 mb-8">
           <div className="absolute inset-0 rounded-[40px] bg-gradient-accent blur-2xl opacity-40" />
           <div className="relative w-full h-full rounded-[36px] bg-gradient-accent flex items-center justify-center shadow-soft-lg">
-            <LumenLogo className="w-20 h-20" />
+            <ReadlensLogo className="w-20 h-20" />
           </div>
         </div>
         <h1 className="font-display text-[24px] font-bold text-foreground text-center leading-tight">

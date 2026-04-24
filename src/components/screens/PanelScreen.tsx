@@ -1,5 +1,5 @@
 import { X, Maximize2 } from "lucide-react";
-import { LumenLogo } from "@/components/LumenLogo";
+import { ReadlensLogo } from "@/components/ReadlensLogo";
 import { cn } from "@/lib/utils";
 
 const tabs = ["Summary", "Explain", "Study", "Deep Dive"];
@@ -35,7 +35,7 @@ export const PanelScreen = ({ variant = "default", activeTab = 0 }: PanelScreenP
         <div className="px-5 pt-2 pb-3 flex items-center justify-between">
           <div className="flex items-center gap-2 min-w-0">
             <div className="w-7 h-7 rounded-xl bg-gradient-accent flex items-center justify-center shrink-0">
-              <LumenLogo className="w-4 h-4" />
+              <ReadlensLogo className="w-4 h-4" />
             </div>
             <div className="min-w-0">
               <p className="font-display text-[14px] font-bold text-foreground leading-tight truncate">

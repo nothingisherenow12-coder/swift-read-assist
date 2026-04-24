@@ -1,5 +1,5 @@
 import { Shield, Zap } from "lucide-react";
-import { LumenLogo } from "@/components/LumenLogo";
+import { ReadlensLogo } from "@/components/ReadlensLogo";
 
 export const SetupScreen = () => {
   return (
@@ -9,7 +9,7 @@ export const SetupScreen = () => {
         <div className="relative mb-8">
           <div className="absolute inset-0 bg-gradient-accent blur-2xl opacity-30 rounded-full" />
           <div className="relative w-20 h-20 rounded-3xl bg-gradient-accent flex items-center justify-center shadow-soft-lg">
-            <LumenLogo className="w-11 h-11" />
+            <ReadlensLogo className="w-11 h-11" />
           </div>
         </div>
 

@@ -49,4 +49,4 @@ export const ReadlensLogo = ({ className, tone = "light" }: ReadlensLogoProps) =
 };
 
 // Backwards-compatible alias so older imports keep working.
-export const LumenLogo = ReadlensLogo;
+export const ReadlensLogo = ReadlensLogo;
