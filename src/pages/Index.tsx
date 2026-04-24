@@ -39,7 +39,8 @@ import { FaqDetailScreen } from "@/components/screens/FaqDetailScreen";
 import { SaveToCollectionSheetScreen } from "@/components/screens/SaveToCollectionSheetScreen";
 import { LiveChatScreen } from "@/components/screens/LiveChatScreen";
 import { PhotoPickerSheetScreen } from "@/components/screens/PhotoPickerSheetScreen";
-import { Sparkles, Moon, Sun } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
+import { LumenLogo } from "@/components/LumenLogo";
 import { useEffect, useState } from "react";
 
 const Index = () => {
@@ -56,7 +57,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
             <div className="w-8 h-8 rounded-xl bg-gradient-accent flex items-center justify-center">
-              <Sparkles className="w-4 h-4 text-white" strokeWidth={2.4} />
+              <LumenLogo className="w-5 h-5" />
             </div>
             <div>
               <p className="font-display text-[15px] font-bold text-foreground leading-none">Lumen</p>
