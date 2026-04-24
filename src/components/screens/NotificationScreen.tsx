@@ -1,4 +1,5 @@
-import { Sparkles, Pause, X } from "lucide-react";
+import { Pause, X } from "lucide-react";
+import { LumenLogo } from "@/components/LumenLogo";
 
 export const NotificationScreen = () => {
   return (
@@ -13,7 +14,7 @@ export const NotificationScreen = () => {
       <div className="mx-3 mt-4 p-3.5 rounded-2xl bg-surface/95 backdrop-blur-md shadow-soft-lg animate-fade-up">
         <div className="flex items-start gap-2.5">
           <div className="w-7 h-7 rounded-lg bg-gradient-accent flex items-center justify-center shrink-0">
-            <Sparkles className="w-3.5 h-3.5 text-white" strokeWidth={2.4} />
+            <LumenLogo className="w-4 h-4" />
           </div>
           <div className="flex-1 min-w-0">
             <div className="flex items-center justify-between gap-2">
@@ -44,7 +45,7 @@ export const NotificationScreen = () => {
       <div className="mx-3 mt-2 p-3.5 rounded-2xl bg-surface/70 backdrop-blur-md">
         <div className="flex items-start gap-2.5">
           <div className="w-7 h-7 rounded-lg bg-accent-soft flex items-center justify-center shrink-0">
-            <Sparkles className="w-3.5 h-3.5 text-accent" strokeWidth={2.4} />
+            <LumenLogo tone="dark" className="w-4 h-4 text-accent" />
           </div>
           <div className="flex-1 min-w-0">
             <p className="text-[10.5px] font-semibold text-foreground/70 uppercase tracking-wide">Lumen · 2h ago</p>

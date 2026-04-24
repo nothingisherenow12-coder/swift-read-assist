@@ -1,4 +1,5 @@
-import { Sparkles, Shield, Zap } from "lucide-react";
+import { Shield, Zap } from "lucide-react";
+import { LumenLogo } from "@/components/LumenLogo";
 
 export const SetupScreen = () => {
   return (
@@ -8,7 +9,7 @@ export const SetupScreen = () => {
         <div className="relative mb-8">
           <div className="absolute inset-0 bg-gradient-accent blur-2xl opacity-30 rounded-full" />
           <div className="relative w-20 h-20 rounded-3xl bg-gradient-accent flex items-center justify-center shadow-soft-lg">
-            <Sparkles className="w-9 h-9 text-white" strokeWidth={2.2} />
+            <LumenLogo className="w-11 h-11" />
           </div>
         </div>
 

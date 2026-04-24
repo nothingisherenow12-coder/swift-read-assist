@@ -1,4 +1,5 @@
 import { Sparkles, BookOpen, GraduationCap, BookMarked, Languages, Copy, Share2 } from "lucide-react";
+import { LumenLogo } from "@/components/LumenLogo";
 
 const actions = [
   { icon: <Sparkles className="w-4 h-4" />, label: "Summary", desc: "Quick bullets", primary: true },
@@ -31,7 +32,7 @@ export const QuickActionsScreen = () => {
 
         <div className="flex items-center gap-2 mb-4 px-1">
           <div className="w-7 h-7 rounded-xl bg-gradient-accent flex items-center justify-center">
-            <Sparkles className="w-3.5 h-3.5 text-white" strokeWidth={2.4} />
+            <LumenLogo className="w-4 h-4" />
           </div>
           <div className="flex-1 min-w-0">
             <p className="font-display text-[12.5px] font-bold text-foreground leading-tight">

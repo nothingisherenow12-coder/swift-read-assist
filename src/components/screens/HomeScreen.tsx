@@ -1,4 +1,5 @@
-import { Sparkles, Home, Clock, Bookmark, Settings, Plus } from "lucide-react";
+import { Home, Clock, Bookmark, Settings, Plus } from "lucide-react";
+import { LumenLogo } from "@/components/LumenLogo";
 
 export const HomeScreen = () => {
   return (
@@ -18,7 +19,7 @@ export const HomeScreen = () => {
       <div className="mx-5 p-4 rounded-2xl bg-gradient-hero border border-border/60">
         <div className="flex items-center gap-2 mb-3">
           <div className="w-7 h-7 rounded-xl bg-gradient-accent flex items-center justify-center">
-            <Sparkles className="w-3.5 h-3.5 text-white" strokeWidth={2.4} />
+            <LumenLogo className="w-4 h-4" />
           </div>
           <p className="font-display text-[11.5px] font-bold text-foreground/80 uppercase tracking-wide">
             Assistant ready
