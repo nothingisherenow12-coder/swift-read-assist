@@ -1,4 +1,5 @@
 import { ChevronRight, Moon, Globe, Bell, Shield, Sparkles, Trash2, Info, Zap, ArrowLeft } from "lucide-react";
+import { LumenLogo } from "@/components/LumenLogo";
 
 export const SettingsScreen = () => {
   return (
@@ -16,7 +17,7 @@ export const SettingsScreen = () => {
         <div className="p-4 rounded-2xl bg-gradient-hero border border-border/60">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-gradient-accent flex items-center justify-center">
-              <Sparkles className="w-4 h-4 text-white" strokeWidth={2.4} />
+              <LumenLogo className="w-5 h-5" />
             </div>
             <div className="flex-1">
               <p className="font-display text-[13px] font-bold text-foreground">Assistant active</p>
