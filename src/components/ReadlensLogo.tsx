@@ -47,6 +47,3 @@ export const ReadlensLogo = ({ className, tone = "light" }: ReadlensLogoProps) =
     </svg>
   );
 };
-
-// Backwards-compatible alias so older imports keep working.
-export const ReadlensLogo = ReadlensLogo;
