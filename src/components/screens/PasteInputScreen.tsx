@@ -28,7 +28,7 @@ export const PasteInputScreen = () => {
 
         <button className="mt-2 h-12 rounded-2xl bg-foreground text-background font-display text-[13px] font-bold flex items-center justify-center gap-2">
           <Sparkles className="w-4 h-4" />
-          Read with Lumen
+          Read with Readlens AI
         </button>
         <p className="text-[10px] text-muted-foreground text-center mt-2 mb-3">
           Choose a mode after analysis
