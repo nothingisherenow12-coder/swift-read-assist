@@ -1,4 +1,5 @@
-import { Sparkles, Pause, X } from "lucide-react";
+import { Pause, X } from "lucide-react";
+import { LumenLogo } from "@/components/LumenLogo";
 
 export const NotificationScreen = () => {
   return (

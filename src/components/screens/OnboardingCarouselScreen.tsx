@@ -1,4 +1,5 @@
-import { Sparkles, ChevronRight, ArrowRight } from "lucide-react";
+import { ChevronRight, ArrowRight } from "lucide-react";
+import { LumenLogo } from "@/components/LumenLogo";
 
 const slides = [
   {
