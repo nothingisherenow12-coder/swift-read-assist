@@ -45,7 +45,7 @@ export const NotificationScreen = () => {
       <div className="mx-3 mt-2 p-3.5 rounded-2xl bg-surface/70 backdrop-blur-md">
         <div className="flex items-start gap-2.5">
           <div className="w-7 h-7 rounded-lg bg-accent-soft flex items-center justify-center shrink-0">
-            <Sparkles className="w-3.5 h-3.5 text-accent" strokeWidth={2.4} />
+            <LumenLogo tone="dark" className="w-4 h-4 text-accent" />
           </div>
           <div className="flex-1 min-w-0">
             <p className="text-[10.5px] font-semibold text-foreground/70 uppercase tracking-wide">Lumen · 2h ago</p>
