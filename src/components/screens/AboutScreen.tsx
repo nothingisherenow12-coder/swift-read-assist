@@ -17,13 +17,13 @@ export const AboutScreen = () => {
           <div className="w-16 h-16 rounded-3xl bg-gradient-accent flex items-center justify-center shadow-soft mb-3">
             <LumenLogo className="w-9 h-9" />
           </div>
-          <p className="font-display text-[18px] font-bold text-foreground">Lumen</p>
+          <p className="font-display text-[18px] font-bold text-foreground">Readlens AI</p>
           <p className="text-[11px] text-muted-foreground mt-0.5">Version 1.4.2 (build 218)</p>
         </div>
 
         <div className="rounded-2xl bg-card border border-border/60 overflow-hidden divide-y divide-border/50">
           {[
-            { icon: Star, label: "Rate Lumen", trail: "★★★★★" },
+            { icon: Star, label: "Rate Readlens AI", trail: "★★★★★" },
             { icon: FileText, label: "Terms of service", trail: "" },
             { icon: Shield, label: "Privacy policy", trail: "" },
             { icon: Mail, label: "Contact support", trail: "" },
@@ -46,7 +46,7 @@ export const AboutScreen = () => {
           <p className="flex items-center gap-1">
             Made with <Heart className="w-3 h-3 text-destructive fill-destructive" /> in Bengaluru
           </p>
-          <p className="mt-0.5">© 2026 Lumen Labs</p>
+          <p className="mt-0.5">© 2026 Readlens AI Labs</p>
         </div>
       </div>
     </div>

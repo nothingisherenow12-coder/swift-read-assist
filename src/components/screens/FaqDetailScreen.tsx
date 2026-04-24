@@ -20,7 +20,7 @@ export const FaqDetailScreen = () => {
 
         <div className="mt-5 space-y-3">
           <p className="text-[12.5px] text-foreground/85 leading-[1.7]">
-            Whenever you copy text in any app, Lumen detects the clipboard change and shows a small floating chip near the bottom of your screen.
+            Whenever you copy text in any app, Readlens AI detects the clipboard change and shows a small floating chip near the bottom of your screen.
           </p>
           <p className="text-[12.5px] text-foreground/85 leading-[1.7]">
             Tap the chip to open the AI panel and pick a reading mode — Summary, Explain, Study, or Deep Dive. Ignore it and it disappears in 6 seconds.

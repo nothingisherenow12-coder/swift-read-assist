@@ -9,7 +9,7 @@ export const PermissionsScreen = () => {
           A couple of permissions
         </h1>
         <p className="text-[12.5px] text-muted-foreground mt-1.5 leading-relaxed">
-          Lumen needs these to appear above other apps. Your text is never stored.
+          Readlens AI needs these to appear above other apps. Your text is never stored.
         </p>
       </div>
 

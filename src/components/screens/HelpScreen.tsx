@@ -8,9 +8,9 @@ const topics = [
 ];
 
 const faqs = [
-  "How does Lumen detect copied text?",
+  "How does Readlens AI detect copied text?",
   "Why does it need accessibility access?",
-  "Can I use Lumen offline?",
+  "Can I use Readlens AI offline?",
   "How do I export my reading history?",
 ];
 

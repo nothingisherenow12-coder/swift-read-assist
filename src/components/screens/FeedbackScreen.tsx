@@ -19,7 +19,7 @@ export const FeedbackScreen = () => {
 
       <div className="flex-1 overflow-hidden px-5 space-y-4">
         <div>
-          <p className="text-[10px] uppercase tracking-wider font-bold text-muted-foreground mb-2">How's Lumen?</p>
+          <p className="text-[10px] uppercase tracking-wider font-bold text-muted-foreground mb-2">How's Readlens AI?</p>
           <div className="grid grid-cols-3 gap-2">
             {[
               [Frown, "Bad"],

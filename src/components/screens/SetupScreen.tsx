@@ -14,7 +14,7 @@ export const SetupScreen = () => {
         </div>
 
         <h1 className="font-display text-[28px] font-bold text-foreground leading-tight mb-3">
-          Welcome to Lumen
+          Welcome to Readlens AI
         </h1>
         <p className="text-[14px] text-muted-foreground leading-relaxed max-w-[260px] mb-10">
           An invisible AI layer that helps you understand any text, anywhere.

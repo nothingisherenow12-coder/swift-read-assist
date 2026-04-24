@@ -18,7 +18,7 @@ export const NotificationScreen = () => {
           </div>
           <div className="flex-1 min-w-0">
             <div className="flex items-center justify-between gap-2">
-              <p className="text-[10.5px] font-semibold text-foreground/70 uppercase tracking-wide">Lumen</p>
+              <p className="text-[10.5px] font-semibold text-foreground/70 uppercase tracking-wide">Readlens AI</p>
               <p className="text-[10px] text-muted-foreground">now</p>
             </div>
             <p className="font-display text-[12.5px] font-semibold text-foreground mt-0.5 leading-tight">
@@ -48,7 +48,7 @@ export const NotificationScreen = () => {
             <LumenLogo tone="dark" className="w-4 h-4 text-accent" />
           </div>
           <div className="flex-1 min-w-0">
-            <p className="text-[10.5px] font-semibold text-foreground/70 uppercase tracking-wide">Lumen · 2h ago</p>
+            <p className="text-[10.5px] font-semibold text-foreground/70 uppercase tracking-wide">Readlens AI · 2h ago</p>
             <p className="font-display text-[12px] font-semibold text-foreground mt-0.5 leading-tight">
               You read 14 things this week
             </p>

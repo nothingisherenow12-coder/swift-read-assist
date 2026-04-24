@@ -60,7 +60,7 @@ const Index = () => {
               <LumenLogo className="w-5 h-5" />
             </div>
             <div>
-              <p className="font-display text-[15px] font-bold text-foreground leading-none">Lumen</p>
+              <p className="font-display text-[15px] font-bold text-foreground leading-none">Readlens AI</p>
               <p className="text-[10px] text-muted-foreground mt-0.5">UI / UX Preview · 41 screens</p>
             </div>
           </div>
@@ -270,7 +270,7 @@ const Index = () => {
       </section>
 
       <footer className="border-t border-border/60 py-8 text-center text-[12px] text-muted-foreground">
-        Lumen — visual system · 41 screens · Material 3 principles
+        Readlens AI — visual system · 41 screens · Material 3 principles
       </footer>
     </div>
   );
