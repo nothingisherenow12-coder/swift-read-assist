@@ -9,17 +9,18 @@ interface ReadlensLogoProps {
 /**
  * Readlens AI brand mark — original artwork.
  *
- * Concept: a stacked "page R" — two rounded page-cards layered behind
- * a custom geometric letter R cut from negative space, with a single
- * bright focal dot representing the AI "reading point."
+ * Concept: a single sheet of paper with a crisp folded corner,
+ * forming a confident triangular silhouette (suggests forward motion
+ * and "next page"). A solid AI spark sits in the upper-right where
+ * the fold lifts — representing AI assistance arriving on the page.
  *
- * Reading (pages) + Identity (R for Readlens) + AI (focus dot).
- * Designed from scratch — not derived from any existing icon or wordmark.
+ * Bold, geometric, single-color — designed to read at any size,
+ * from a 16px favicon to a hero mark. Not derived from any existing
+ * icon library or brand.
  */
 export const ReadlensLogo = ({ className, tone = "light" }: ReadlensLogoProps) => {
   const fg = tone === "light" ? "#FFFFFF" : "currentColor";
-  // unique mask id per render so multiple instances don't collide
-  const maskId = `readlens-r-mask-${Math.random().toString(36).slice(2, 8)}`;
+  const shadow = tone === "light" ? "rgba(0,0,0,0.18)" : "rgba(0,0,0,0.12)";
 
   return (
     <svg
@@ -30,55 +31,41 @@ export const ReadlensLogo = ({ className, tone = "light" }: ReadlensLogoProps) =
       aria-label="Readlens AI logo"
       role="img"
     >
-      <defs>
-        {/* Mask defines the front "page" with the letter R cut out */}
-        <mask id={maskId} maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
-          {/* Visible front page area */}
-          <rect x="6" y="5" width="20" height="22" rx="3.2" fill="#fff" />
-          {/* Cut out the R: vertical stem */}
-          <rect x="10" y="9" width="3.2" height="14" rx="0.6" fill="#000" />
-          {/* Cut out the R: top bowl (outer) */}
-          <path
-            d="M13.2 9 H18.5 A4 4 0 0 1 18.5 17 H13.2 Z"
-            fill="#000"
-          />
-          {/* Re-add the inner hole of the bowl (so it looks like a real R) */}
-          <path
-            d="M14.6 10.6 H18.1 A2.4 2.4 0 0 1 18.1 15.4 H14.6 Z"
-            fill="#fff"
-          />
-          {/* Cut out the R: diagonal leg */}
-          <path
-            d="M15.4 16.6 L21.2 23 L18.4 23 L13 17.4 Z"
-            fill="#000"
-          />
-        </mask>
-      </defs>
-
-      {/* Back page — slightly offset, lower opacity (page stack effect) */}
-      <rect
-        x="3.5"
-        y="7.5"
-        width="20"
-        height="22"
-        rx="3.2"
+      {/* Main folded page — solid shape with the top-right corner clipped */}
+      <path
+        d="M7 4
+           H19.5
+           L26 10.5
+           V26
+           A2.5 2.5 0 0 1 23.5 28.5
+           H7
+           A2.5 2.5 0 0 1 4.5 26
+           V6.5
+           A2.5 2.5 0 0 1 7 4
+           Z"
         fill={fg}
-        fillOpacity="0.35"
       />
 
-      {/* Front page with R cut out via mask */}
-      <rect
-        x="0"
-        y="0"
-        width="32"
-        height="32"
-        fill={fg}
-        mask={`url(#${maskId})`}
+      {/* The folded corner — a darker triangular flap that reads as depth */}
+      <path
+        d="M19.5 4 L26 10.5 H21.5 A2 2 0 0 1 19.5 8.5 Z"
+        fill={shadow}
       />
 
-      {/* AI focus dot — sits on top of the R's bowl */}
-      <circle cx="22.6" cy="6.4" r="2" fill={fg} />
-      <circle cx="22.6" cy="6.4" r="0.9" fill={tone === "light" ? "#000" : "#fff"} fillOpacity="0.25" />
+      {/* AI spark — a bold 4-point star sitting on the page */}
+      <path
+        d="M14 14
+           L15.6 17.4
+           L19 19
+           L15.6 20.6
+           L14 24
+           L12.4 20.6
+           L9 19
+           L12.4 17.4
+           Z"
+        fill={tone === "light" ? "#0F172A" : "currentColor"}
+        fillOpacity={tone === "light" ? 1 : 0.92}
+      />
     </svg>
   );
 };
